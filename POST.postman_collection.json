@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "bfea734e-7394-47b1-821a-f480846ddf35",
+		"name": "POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "7bba3ab9-7aa1-4b77-8652-ca0cb056493b",
+			"name": "HTTP Post Todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"walk dog\",\r\n  \"isComplete\":true\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/todo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "52d4365c-bc47-42ea-a14e-d0e9ed318602",
+			"name": "GET ToDo getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/todo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "1c799b6a-05ca-4bf3-809d-a9994ff597f2",
+			"name": "Update index 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"walk Cat\",\r\n  \"isComplete\":true\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/todo/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "fcc569f8-c4bb-4c6f-8c7f-68e3e088b4f4",
+			"name": "DELETE index 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://localhost:5001/api/todo/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
